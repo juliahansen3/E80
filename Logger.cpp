@@ -26,7 +26,7 @@ void Logger::padding(int number, byte width, String & str) {
 }
 
 void Logger::init(void) {
-	Serial.print("Initializing SD Card... ");
+	Serial.print("Initializing SD Card... Stop");
   if (!SD.begin()) {
     Serial.println("failed!");
     return;
